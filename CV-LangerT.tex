@@ -1,19 +1,34 @@
 \documentclass[11pt,twoside,a4paper]{book}
 
 % Intra-PDF Links and Bookmarks 
-\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage[
+  % color my links blue
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  % necessary flag for PDF metadata to be written
+  pdftex,
+  % various PDF metadata for SEO and good UX
+  pdfauthor={Timothy Langer},
+  pdftitle={Timothy Langer | Software developer in London},
+  pdfsubject={Timothy Langer's CV / Resume},
+  pdfkeywords={CV,Resumé,Timothy,Langer},
+  pdffitwindow=true,
+  pdflang=en-GB,
+  pdfmenubar=false,
+  pdfpagelayout=OneColumn,
+  pdfnewwindow=true
+]{hyperref}
+
+% in supported viewers, fit the page to horizontal width
 \hypersetup{pdfstartview={FitH top}}
-%\usepackage[open,openlevel=1]{bookmark}
 
 % A4, 1.91cm margins, header+footer
 \usepackage[a4paper, margin=1.91cm, top=1.91cm, bottom=1.91cm]{geometry}
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-\pagestyle{empty}
-%\fancyhf{}
-%\setlength{\headheight}{15.2pt}
-% \fancyfoot[RE,LO]{ \textit{Timothy Langer 2022} }
 
+\pagestyle{empty}
+
+% set Inter as default font, depending on what I'm going for
 % \usepackage[sfdefault]{inter}
 
 % Use UTF-8 so that we can have lots of nice characters!
@@ -25,6 +40,7 @@
 \setlength{\parskip}{0em}
 \setlength{\parindent}{0pt}
 
+% customise my titles
 \usepackage{titlesec}
 
 \titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -46,7 +62,7 @@
 \newcommand{\cvdate}[1] {\hfill {\color{gray} \mdseries \slshape \normalsize #1}}
 
 \author{Timothy Langer}
-\title{Timothy Langer CV 2022}
+\title{Timothy Langer CV}
 
 \pdfsuppresswarningpagegroup=1
 
