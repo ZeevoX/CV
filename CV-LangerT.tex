@@ -1,0 +1,161 @@
+\documentclass[11pt,twoside,a4paper]{book}
+
+% Intra-PDF Links and Bookmarks 
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\hypersetup{pdfstartview={FitH top}}
+%\usepackage[open,openlevel=1]{bookmark}
+
+% A4, 1.91cm margins, header+footer
+\usepackage[a4paper, margin=1.91cm, top=1.91cm, bottom=1.91cm]{geometry}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\pagestyle{empty}
+%\fancyhf{}
+%\setlength{\headheight}{15.2pt}
+% \fancyfoot[RE,LO]{ \textit{Timothy Langer 2022} }
+
+% \usepackage[sfdefault]{inter}
+
+% Use UTF-8 so that we can have lots of nice characters!
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+% Apply spacing in between paragraphs
+\setlength{\parskip}{0em}
+\setlength{\parindent}{0pt}
+
+\usepackage{titlesec}
+
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\titleformat
+{\section}
+[display]
+{\large\scshape}
+{\thesection}
+{}{}
+[
+\vspace{-1.5ex}%
+\rule{\textwidth}{0.3pt}
+\vspace{-1.5ex}%
+]
+
+\newcommand{\cvdate}[1] {\hfill {\color{gray} \mdseries \slshape \normalsize #1}}
+
+\author{Timothy Langer}
+\title{Timothy Langer CV 2022}
+
+\pdfsuppresswarningpagegroup=1
+
+\usepackage{xcolor}
+
+\begin{document}
+{\huge \bfseries Timothy Langer}
+
+\vspace{1.5ex}
+
+London, UK | \href{tel:+447910163630}{+44 7910 163630} | \href{mailto:langer.timothy@gmail.com}{langer.timothy@gmail.com} | \href{https://zeevox.net}{zeevox.net} | \href{https://github.com/zeevox/}{github.com/zeevox/}
+
+\vspace{1ex}
+
+\textsl{I am a student interested in computer science and its business applications looking to secure an internship where I can use my experience to help an innovative company.}
+
+\vspace{1ex}
+
+\section*{Education}
+
+\begin{itemize}
+  \item \textbf{Imperial College} \cvdate{London, UK} \\
+    {\small \textit{MEng Computer Science}}
+    \cvdate{\small Oct 2022 -- July 2026 (Exp.)}
+  \item \textbf{St Paul's School} \cvdate{London, UK} \\ 
+    {\small \textit{A Level: A*A*A*A*A* in Maths, Further Maths, Russian, Chemistry, Computer Science} \\
+    \textit{GCSE: Eleven 9s (A** equivalent), including Art and Computer Science}} 
+    \cvdate{\small Sep 2011 -- July 2022} 
+\end{itemize}
+
+\section*{Awards}
+
+\begin{itemize}
+  \itemsep-0.2em
+  % \item St Paul's School Junior Scholar \cvdate{Sep 2018}
+  % \item UKMT Intermediate Maths Challenge Gold award \& Best in School award \cvdate{Mar 2020}
+  % \item SPS Junior Prizes for Computer Science, Chemistry and French \cvdate{Jun 2020}
+  \item Best in school in \href{https://adventofcode.com/2020/about}{Advent of Code} competition \cvdate{Dec 2020}
+  \item SPS Gluckstein Prize for Computer Science \cvdate{Jun 2021 \& May 2022}
+\end{itemize}
+
+\section*{Skills}
+
+\begin{itemize}
+  \itemsep0em
+  \item \textbf{Programming Languages:} Python // Java // Kotlin // Bash // HTML+CSS
+  \item \textbf{Software:} Android // Linux // Git // \LaTeX{} // Docker // Apache
+\end{itemize}
+
+\section*{Experience}
+
+\begin{itemize}
+
+  \item {\bfseries \large \href{https://sentimentinvestor.com/}{Sentiment Investor}} \cvdate{Summer 2021} \\
+    Rewrote user-facing Python library. Integrated Sentiment's services into the open source investment research environment \href{https://openbb.co/}{OpenBB Terminal}. Added NodeJS server-side response validation and testing to the REST API. Deployed a Docker swarm of Twitter scraper bots.
+
+%   \item {\bfseries \large \href{https://github.com/mongoose-os-apps/shelly-homekit}{Shelly HomeKit}} \cvdate{Spring 2021} \\
+% Contributed to development of open source software for Shelly smart home devices; worked on web UI, doorbell support and GitHub Actions workflow.
+
+\item {\bfseries \large \href{https://mongoose-os.com/}{Cesanta IoT}} \cvdate{Oct 2017} \\
+Worked with the Cesanta team to develop an app for customers to configure Wi-Fi on Bluetooth-enabled Mongoose OS IoT devices using an Android phone instead of the command line.
+\end{itemize}
+
+\section*{Projects}
+
+\begin{itemize}  
+
+  \item {\bfseries \large \href{https://zeevox.net}{Personal website} \cvdate{2017 -- present}} \\
+    Host my personal website on an \mbox{Ubuntu} server. Manage and configure \mbox{Wordpress}, \mbox{Apache}, \mbox{OpenVPN}, \mbox{Docker} \& \mbox{RAID}. Proxy traffic through \mbox{Cloudflare} and secure with Let's Encrypt.
+
+\item {\bfseries \large \href{https://github.com/ZeevoX/Ocquarium}{Ocquarium} \cvdate{2017 -- present}} \\
+Developed an Android smartphone application involving a friendly octopus, that can be customised by the user and set as a screensaver or live wallpaper; it has $30000+$ downloads on Google Play.
+
+\item {\bfseries \large \href{https://github.com/ZeevoX/Secure}{Secure} \cvdate{2019 -- 2020}} \\
+Created a password manager for Android from scratch, following Android data security best practices. For maximal user trust, the app is as explicit as possible about how passwords are handled and stored. Additionally, developed a secure Google Drive backup feature.
+
+%\item {\bfseries \large \href{https://github.com/ZeevoX/thamestides}{Thames Tides} \cvdate{2020}} \\
+% Scrape several online sources of predicted and observed heights and times of the tidal portion of the River Thames, aggregate data and serve through a JSON API for easy access. 
+
+\item {\bfseries \large \href{https://github.com/ZeevoX/nearow}{Nero} \cvdate{2021 -- 2022}} \\
+Developed an Android application to track rowing sessions, performing time series analysis on accelerometer data to extract rowing-specific metrics such as stroke rate.
+
+\end{itemize}
+
+\section*{Other}
+
+\begin{itemize}
+  \itemsep0em
+  \item \textbf{Languages:} English (native), Russian (native), French (intermediate), Italian (intermediate)
+  \item \textbf{Hobbies / interests:} Competitive rowing (national record-holder), cycling, photography, gardening, chemistry, painting, digital art using graphics tablet
+\end{itemize}
+
+\pagebreak
+
+\section*{Links}
+
+Hyperlinks are highlighted in blue and clickable. In case of printing, the links are typed out below.
+
+\begin{itemize}
+  \item My personal website: \texttt{\href{https://zeevox.net}{https://zeevox.net}}
+    \item My GitHub profile: \texttt{\href{https://github.com/ZeevoX}{https://github.com/ZeevoX}}
+    \item Sentiment Investor: \href{https://sentimentinvestor.com/}{\texttt{https://sentimentinvestor.com/}}
+    \item Ocquarium: \texttt{\href{https://github.com/ZeevoX/Ocquarium}{https://github.com/ZeevoX/Ocquarium}}
+    \item Secure: \texttt{\href{https://github.com/ZeevoX/Secure}{https://github.com/ZeevoX/Secure}}
+    \item Nero: \texttt{\href{https://github.com/ZeevoX/nearow}{https://github.com/ZeevoX/nearow}}
+%    \item Thames Tides: \texttt{\href{https://github.com/ZeevoX/thamestides}{https://github.com/ZeevoX/thamestides}}
+    \item Advent of Code: \texttt{\href{https://adventofcode.com/2020/about}{https://adventofcode.com/2020/about}}
+%    \item Shelly HomeKit: \texttt{\href{https://github.com/mongoose-os-apps/shelly-homekit}{https://github.com/mongoose-os-apps/shelly-homekit}}
+    \item Cesanta IoT: \texttt{\href{https://mongoose-os.com/}{https://mongoose-os.com/}}
+\end{itemize}
+
+\end{document}
